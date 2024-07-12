@@ -7,7 +7,7 @@ job('Aplicacion Node.js DSL') {
         }
     }
     triggers {
-        scm('H/20 * * * *') // Cada 20 minutos
+        scm('H/20 * * * *') // Cada 20 minutos comprueba si hay cambios para construir el job
     }
     wrappers {
         nodejs('nodejs')
